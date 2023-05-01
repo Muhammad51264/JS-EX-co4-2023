@@ -99,7 +99,7 @@ console.log("----------------------------------------------------")
     }
 
 
-    console.log(BankNotes_converter(367))
+    console.log(BankNotes_converter(3799))
 
 console.log("------------------charcounter-----------------")
 function char_counter(word,letter){
@@ -183,4 +183,6 @@ for(let i=1;i<=meals_num;i++){
     
     previous_meal=meal
 }
+
 console.log(meals)
+
