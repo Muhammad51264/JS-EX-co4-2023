@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping list</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+.shopping__container{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-sizing: border-box;
+    padding-left: 10px ;
+}
+
+.add{
+    box-shadow: 1px 1px 1px 1px gray;
+    border: 1px solid lightgray;
+
+}
+
+
+</style>
+<body>
+<div class="shopping__container">
+    <h1>My shopping list</h1>
+    <div class="item__entry">
+        <label for="">Enter a new item:</label>
+        <input type="text" id="item-name">
+        <button class="add" id="add-button" onclick="addItems()">Add item</button>
+    </div>
+    <ul id="list">
+        
+    </ul>
+</div>
+</body>
+<script src="shopping_list.js"></script>
+</html>

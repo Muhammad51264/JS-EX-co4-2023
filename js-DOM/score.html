@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>score</title>
+</head>
+<style>
+h1 ,h2{
+    color: blue;
+}
+.test__container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 10%;
+}
+.entry{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buttons{
+    display: flex;
+    gap: 5%;
+}
+
+th, td {
+  text-align: left;
+  padding-right: 90px;
+}
+</style>
+<body>
+
+    <div class="test__container">
+        <h1>Use a Test Score array</h1>
+        <div class="entry">
+            <div class="Name">
+                <label for="name">Name: </label>
+                <input type="text" id="name">
+            </div>
+            <div class="Score">
+                <label for="name">Score: </label>
+                <input type="text" id="score">
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="addScore()">Add to Array</button>
+            <button onclick="displayResults()">Display Results</button>
+            <button onclick="displayScores()">Display Scores</button>
+        </div>
+        <div class="results" id="results">
+            <h2>Results</h2>
+        </div>
+        <div class="result__table" id="result__table">
+        <h2>Scores</h2>
+        <table>
+
+            
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+
+            </tr>
+            <tbody id="score-table">
+
+            </tbody>
+
+    </table></div>
+
+
+    </div>
+
+    
+</body>
+<script src="score.js"></script>
+</html>
